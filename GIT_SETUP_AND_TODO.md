@@ -36,8 +36,8 @@
 ### Tâches pour Sprint 1
 
 #### TL (Team Lead)
-1. Créer les branches `staging` et `release` via l'interface Git.
-2. Assigner les tâches aux devs via issues ou commentaires dans le repository.
+1. Créer les branches `staging` et `release` via l'interface Git.(fait)
+2. Assigner les tâches aux devs via issues ou commentaires dans le repository.(fait)
 3. Après réception des PR des devs :
    - Faire code review.
    - Si OK : Merger vers `main`, puis vers `staging`.
@@ -50,7 +50,7 @@
 2. **Script base de données** : Créer un script SQL pour insérer les hôtels dans MySQL (table `hotels` avec colonnes comme `id`, `nom`, etc.). Pas d'interface, juste script.
 3. **Formulaire d'insertion de réservation** :
    - Créer un contrôleur avec méthode pour afficher le formulaire (utilisant @GetMapping ou @UrlAnnotation du framework).
-   - Le formulaire doit permettre d'entrer : dates/heures d'arrivée, nombre de personnes, hôtel (utiliser l'ID d'un hôtel du script).
+   - Le formulaire doit permettre d'entrer : dates/heures d'arrivée (Format : AAAA/MM/JJ HH/MIN/SS à convertir), nombre de personnes, hôtel (utiliser l'ID d'un hôtel du script).
    - Utiliser JSP pour la vue du formulaire.
    - Soumettre via POST, sauvegarder en base (table `reservations` avec liaison à `hotels`).
 4. **Commiter et pousser** : Commiter les changements, pousser la branche.
