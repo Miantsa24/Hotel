@@ -111,7 +111,7 @@
             </div>
         <% } %>
         
-        <form action="reservation/save" method="POST">
+        <form action="${pageContext.request.contextPath}/reservation/save" method="POST">
             <div class="form-group">
                 <label for="hotelId">Hôtel *</label>
                 <select name="hotelId" id="hotelId" required>
