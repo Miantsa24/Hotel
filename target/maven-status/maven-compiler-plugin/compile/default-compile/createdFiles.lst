@@ -1,0 +1,6 @@
+dao\HotelDAO.class
+models\Hotel.class
+models\Reservation.class
+dao\DatabaseConnection.class
+dao\ReservationDAO.class
+controllers\ReservationController.class
