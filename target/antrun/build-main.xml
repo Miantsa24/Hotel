@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy file="C:\Users\Za\Documents\S5\GitHub\MrNaina\Hotel\target/hotel-app-1.0-SNAPSHOT.war" todir="C:\Program Files\Apache Software Foundation\apache-tomcat-10.1.49\webapps" />
+  </target>
+</project>
