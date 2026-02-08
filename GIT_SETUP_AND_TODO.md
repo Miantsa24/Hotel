@@ -71,3 +71,6 @@
 - Base : MySQL, hôtels via script.
 - Filtre : Date d'arrivée seulement.
 - Après Sprint 1 : TL crée le todo pour Sprint 2, etc.
+
+
+
