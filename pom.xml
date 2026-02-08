@@ -13,9 +13,9 @@
     <description>Application de réservation d'hôtel utilisant un framework personnalisé</description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -76,7 +76,7 @@
                         <configuration>
                             <target>
                                 <copy file="${project.build.directory}/${project.build.finalName}.war"
-                                      todir="C:\Program Files\Apache Software Foundation\apache-tomcat-10.1.49\webapps"/>
+                                      todir="C:\Program Files\Apache Software Foundation\Tomcat 10.1_Tomcat102\webapps"/>
                             </target>
                         </configuration>
                     </execution>

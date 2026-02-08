@@ -4,6 +4,7 @@ import src.Controller;
 import src.GetMapping;
 import src.PostMapping;
 import src.ModelView;
+import src.RequestParam;
 
 import dao.HotelDAO;
 import dao.ReservationDAO;
@@ -39,9 +40,16 @@ public class ReservationController {
      * Traite la soumission du formulaire de réservation
      */
     @PostMapping("/reservation/save")
-    public ModelView saveReservation(String hotelId, String dateArrivee, String heureArrivee,
-                                      String dateDepart, String nombrePersonnes, String nomClient,
-                                      String emailClient, String telephoneClient) {
+    public ModelView saveReservation(
+            @RequestParam("hotelId") String hotelId, 
+            @RequestParam("dateArrivee") String dateArrivee, 
+            @RequestParam("heureArrivee") String heureArrivee,
+            @RequestParam("dateDepart") String dateDepart, 
+            @RequestParam("nombrePersonnes") String nombrePersonnes, 
+            @RequestParam("nomClient") String nomClient,
+            @RequestParam("emailClient") String emailClient, 
+            @RequestParam("telephoneClient") String telephoneClient) {
+        
         ModelView mv = new ModelView("/WEB-INF/views/reservation-form.jsp");
         
         try {
